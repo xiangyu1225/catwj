@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="x5-fullscreen" content="true">
+    <meta name="full-screen" content="yes">
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="UTF-8">
+    <title>Cat®360°全程安心服务</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115001123-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115001123-2');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TBTN6XW');
+    </script>
+    <!-- End Google Tag Manager -->
+    <link href="css/index.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/catPlug.js"></script>
+    <script type="text/javascript" src="js/index.js?v=1"></script>
+    <script type="text/javascript" src="js/base.js?v=1"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/banner.jpg" alt="" class="ds">
+        </div>
+        <div class="center">
+            <img src="images/tupian1.jpg" alt="" class="ds">
+            <div class="sp bofang">
+                <img src="images/video.gif" alt="">
+            </div>
+        </div>
+        <div class="center1">
+            <img src="images/tupian2.jpg" alt="" class="ds">
+            <div class="button1  page-end">
+                <div class="page-end">
+                    <div class="relative"><img src="./images/button1.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="center2">
+            <img src="images/tupian3.jpg" alt="" class="ds">
+            <div class="button2 page-end">
+                <div class="">
+                    <div class="relative"><img src="./images/button1.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="center3">
+            <img src="images/tupian4.jpg" alt="" class="ds">
+        </div>
+        <div class="center4">
+            <img src="images/tupian5.jpg" alt="" class="ds">
+        </div>
+        <div class="center5">
+            <img src="images/tupian6.jpg" alt="" class="ds">
+        </div>
+        <div class="center7">
+            <img src="images/tupian7.jpg" alt="">
+            <div class="button3 page-end">
+                <div class="page-end">
+                    <div class="relative"><img src="./images/button3.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="center6" id="maodian">
+            <img src="images/tupian9.jpg" alt="">
+            <input type="text" class="name user-name">
+            <input type="text" class="tel user-phone" maxlength="11">
+            <div class="form_tj tijiao">
+            </div>
+            <div class="duihao yuedu on">
+                <img src="images/duihao.png" alt="">
+            </div>
+            <div class="shengming yinsi">
+            </div>
+        </div>
+    </div>
+    <div class="qiqiu page-end">
+        <a><img src="images/qiqiu.png" alt="" ></a>
+    </div>
+    <div id="dialorMedia" class="flex-middle-center">
+        <video src="./media/1.mp4"></video>
+        <div class="close"></div>
+    </div>
+    <div id="dialogShengMing">
+        <div class="private-box-bg" style="">
+            <div class="private-box">
+                <div class="title">
+                    卡特彼勒隐私声明
+                    <div class="btn-close"></div>
+                </div>
+                <div id="wrapper2" class="border">
+                    <div>
+                        <h4>
+                            本隐私声明规定了卡特彼勒在Cat<sup>®</sup>360°全程安心服务活动中如何收集、
+                            储存、使用以及转移您的个人信息。本声明反映了我们的行为价值观（卡特彼勒全球行为规范）中表明的价值准则。
+                        </h4>
+                        <h3>此次活动的目的和内容</h3>
+                        <h4> 1. 推广Cat<sup>®</sup>360°全程安心服务活动适用范围</h4>
+                        <p>
+                            本声明适用于[卡特彼勒（中国）投资有限公司及其在中国的关联公司，包括由Caterpillar Inc.直接或间接控制的任何分支机构、关联公司或其他实体]（合称“卡特彼勒”）。本声明适用于[此次活动（包括调研）对象]的个人信息（定义见下文）。 在适用的情况下，卡特彼勒将成为个人信息的有效的“数据控制人”。“数据控制人”是指决定任何个人信息之处理目的和处理方式的个人或组织（单独或共同或与其他实体联合）。
+                        </p>
+                        <h4>什么是个人信息？</h4>
+                        <p>个人信息是指与特定个体有关的或者能够识别特定个体的任何信息。换言之，个人信息可以是与你有关的任何一条信息。我们可能收集的个人信息包括但不限于： [此次活动（包括调研）可能收集的个人信息：手机号码
+                        </p>
+                        <h4>我们如何收集您的个人信息？</h4>
+                        <p>卡特彼勒在您参加此次活动（包括调研）时直接收集上述信息，此类信息基于自愿向卡特彼勒提供。</p>
+                        <h4>我们如何使用个人信息？</h4>
+                        <p>个人信息将作以下使用</p>
+                        <p>我们会使用您的个人信息来实现活动中产生的需求（例如，使用您的手机号码参与注册，我们可能用此号码来联系您。）</p>
+                        <h4>我们如何保护个人信息？</h4>
+                        <p>
+                            卡特彼勒采用合理的措施（包括信息技术安全措施和物理安全措施）来保护个人信息以防止丢失、篡改、伪造、未经授权的访问或未经授权的披露。对于因处理1个人信息而引起的风险、个人信息的敏感性以及考虑到适用法律的要求而言，这些措施均是适当的。卡特彼勒要求其所有员工遵守适用的关于个人信息的安全政策。</p>
+                        <h4>我们将个人信息保存多长时间？</h4>
+                        <p>
+                            只要是为了实现上述目的、满足法律记录保留要求所必需或适用法律允许，卡特彼勒将一直保存个人信息。在个人信息不再被需要时，且在任何情况下保留个人信息的法定权力到期之后，个人信息将通过保密和安全的方式被销毁。不准确或过期的个人信息一经识别将立即被销毁。</p>
+                        <h4>我们如何分享或转移我们所收集的个人信息？</h4>
+                        <p>
+                            只有在法律要求或获得您的同意时，卡特彼勒才会为商业目的转移个人信息。卡特彼勒可根据本声明在为了保护此等个人信息所设计的条款和条件下，向第三方数据控制人或处理者转移个人信息用于数据处理。卡特彼勒将仅在第三方被要求遵守此等程序或实质上相当的标准，以及根据适用的法律、法规和规章需要保护个人信息且其遵守来自卡特彼勒或其数据处理者的任何适当的安全措施以及指示的情况下才会向该第三方分享个人信息。卡特彼勒遵守所有关于向政府机构转移个人信息的法律要求，其标准或程序可能不同于本隐私声明。[为了任何此等目的，我们可能向其分享信息的第三方包括：</p>
+                        <li>在全球范围内支持我们业务（例如提供技术基础设施服务）的供应商、服务提供商以及其他合作伙伴；</li>
+                        <li>法律实施机构或其他政府机构（当法律要求或数据主体授权时）；</li>
+                        <li> 由卡特彼勒控制的关联公司以及其他实体；</li>
+                        <li>以及代表卡特彼勒处理个人信息的其他第三方服务提供商。</li>
+                        <h4>关于您的个人信息您有什么权利？</h4>
+                        <p>卡特彼勒采取合理的措施来保持个人数据的准确性和完整性。卡特彼勒具有允许您合理地访问您个人信息的程序并且授权他们行使根据其当地法律可以行使的其他任何权利。</p>
+                        <p> 请联系[China Branding and Communications]以获得访问您信息的正当程序。</p>
+                        <h4>我从哪里可以获取更多的信息？</h4>
+                        <p>如需请求访问、更新或删除您的个人信息（包括退订卡特彼勒将来的广告、营销或意见调查通讯），或者希望了解关于此隐私声明的更多信息，请通过以下方式联系我们：</p>
+                        <p>卡特彼勒（中国）投资有限公司</p>
+                        <p> 联系人：[China Branding and Communications]</p>
+                        <p>中华人民共和国北京市朝阳区望京街8号院卡特彼勒大厦1203室</p>
+                        <p> 您也可通过以下网址 http://codeofconduct.cat.com 或者拨打（800）-300-7898 联系卡特彼勒商业行为办公室。</p>
+                        <p>
+                            “处理”是指任何涉及使用个人信息或数据的活动，无论是否通过自动的方式，包括获取、记录或持有数据，或在信息上或关于信息进行任何操作，比如变更、调整、组织、修改、检索、使用、咨询、披露、清除或销毁信息。处理还包括将个人数据转移给第三方。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+
+<div id="dialogAlert" class="flex-middle-center">
+		<div>
+	        <p><a><img src="./images/21.png"></a><span>请输入姓名</span></p>
+	        <div class="btn"><a href="http://m.catwj.cn"><img src="images/button4.jpg" ></a></div>
+		</div>
+    </div>
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBTN6XW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

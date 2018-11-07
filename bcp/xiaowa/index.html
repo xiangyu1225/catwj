@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html manifest="IGNORE.manifest"> -->
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- 禁止缓存  -->
+    <!-- <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" /> -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="keywords" content="Cat®卡特）迷你挖旺季活动" />
+    <meta name="description" content="Cat®卡特）迷你挖旺季活动" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1" />
+    <!--微信浏览器内强制竖屏 portrait landscape-->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true">
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="renderer" content="webkit" />
+    <!--你在Windows Phone上的IE10和IE11里tap某元素时，会有一个小小的tap高亮效果，加上这个meta标签可以取消这种效果：-->
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- 引用插件 -->
+    <script type="text/javascript" src="./public/libs/jq.min.js"></script>
+    <script type="text/javascript" src="./public/libs/fastclick.js"></script>
+    <script type="text/javascript" src="./public/libs/swiper-3.4.2.jquery.min.js"></script>
+    <script type="text/javascript" src="./public/libs/iscroll.js"></script>
+    <script type="text/javascript" src="./public/libs/catPlug.js"></script>
+    <!-- <div style="display: none;"><img data-src="./images/200200.png" /></div> -->
+    <script src="./public/libs/jweixin-1.0.0.js"></script>
+    <script src="http://wx3.sktap.cn:3002/api/webconfig?app_id=wx7b07027bde638e28&debug=false"></script>
+    <script type="text/javascript" src="./public/js/base.js?v=20180329"></script>
+    <link rel="stylesheet" href="./public/css/swiper-3.4.2.min.css" />
+    <link rel="stylesheet" href="./public/css/base.css" />
+    <script src="./public/libs/vconsole.min.js"></script>
+    <script>
+    if (location.href.indexOf('debug=jls') > -1) {
+        var vConsole = new VConsole();
+    }
+    </script>
+    <!-- GA: -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112164580-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112164580-2');
+    </script>
+    <!-- 
+GTM
+将此代码粘贴到页面的 <head> 部分中，并使其尽可能靠近顶部位置： -->
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MSMJ8RG');
+
+
+    function gleGA(p, str) {
+        console.log(str);
+        dataLayer && dataLayer.push({ 'event': 'event', 'category': p, 'action': '点击按钮', 'label': p + '_点击按钮_' + str });
+    }
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <div class="loading" id="loading"></div>
+    <div class="wrap">
+        <div class="bg-box bg-box1">
+            <img src="./public/images/bg1.png">
+            <div  onclick="gleGA( '首页', '我要询价')" class="btn"></div>
+        </div>
+        <div class="bg-box bg-box2">
+            <img src="./public/images/bg2.png">
+        </div>
+        <div class="bg-box bg-box3">
+            <img src="./public/images/bg3.png">
+            <div class="xunjia-btn"></div>
+            <div class="b3btn-box">
+                <div>
+                    <div  onclick="gleGA( '首页', '质量稳')" data-nu="1" class="txtbtn"></div>
+                    <div onclick="gleGA( '首页', '油耗低')" data-nu="2" class="txtbtn"></div>
+                    <div onclick="gleGA( '首页', '力量大')" data-nu="3" class="txtbtn"></div>
+                    <div onclick="gleGA( '首页', '效率高')" data-nu="4" class="txtbtn"></div>
+                    <div onclick="gleGA( '首页', '精彩图集')" data-nu="12" class="txtbtn"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-box bg-box5">
+            <img src="./public/images/bg5.png">
+            <div class="b5btn-box on">
+                <div onclick="gleGA( '首页', '保护')" data-nu="5" class="txtbtn"></div>
+                <div onclick="gleGA( '首页', '安心')" data-nu="6" class="txtbtn"></div>
+                <div onclick="gleGA( '首页', '节省')" data-nu="7" class="txtbtn"></div>
+                <div onclick="gleGA( '首页', '回报')" data-nu="8" class="txtbtn on"></div>
+            </div>
+        </div>
+        <div class="bg-box bg-box6">
+            <img src="./public/images/bg6.png">
+            <div class="b6btn-box">
+                <div onclick="gleGA( '首页', '轻松贷')" data-nu="9" class="txtbtn"></div>
+                <div onclick="gleGA( '首页', '灵活还')" data-nu="10" class="txtbtn"></div>
+                <div onclick="gleGA( '首页', '快速批')" data-nu="11" class="txtbtn"></div>
+            </div>
+        </div>
+        <div class="bg-box bg-box7">
+            <div class="vod-box">
+                <div class="imag"><img src="./public/images/m4.png"></div>
+                <div onclick="gleGA( '首页', '视频1')"  data-src="./public/video/320.mp4" class="btn"></div>
+            </div>
+        </div>
+        <div class="bg-box bg-box8">
+            <input class="nam" type="text">
+            <input class="tel" type="tel" maxlength="11">
+            <div class="sub"></div>
+            <div class="ys"></div>
+            <div class="yd"></div>
+        </div>
+        <div class="bg-box bg-box9">
+            <img src="./public/images/bg9.png">
+        </div>
+    </div>
+    <div id="dialogTxt">
+        <div>
+            <div class="close-btn"></div>
+            <img src="./public/images/t1.png">
+        </div>
+    </div>
+    <div id="dialogAlert" class="flex-middle-center">
+        <p><a><img src="./public/images/m6.png"></a><span>请输入姓名</span></p>
+    </div>
+    <div id="dialogWaiting"></div>
+    <div id="dialogShengMing">
+        <div class="private-box-bg" style="">
+            <div class="private-box">
+                <div class="title">
+                    卡特彼勒隐私声明
+                    <div class="btn-close"></div>
+                </div>
+                <div id="wrapper2" class="border" style="overflow: hidden;">
+                    <div>
+                        <h2>
+                           本隐私声明规定了卡特彼勒在[卡特迷你挖旺季活动]中如何收集、储存、使用以及转移您的个人信息。本声明反映了我们的行为价值观（卡特彼勒全球行为规范）中表明的价值准则。
+                        </h2>
+                        <h3>此次活动的目的和内容</h3>
+                        <h4>1.传递融资和延保的优势</h4>
+                        <h4>适用范围</h4>
+
+                        <p>
+                            本声明适用于[卡特彼勒（中国）投资有限公司及其在中国的关联公司，包括由Caterpillar Inc.直接或间接控制的任何分支机构、关联公司或其他实体]（合称“卡特彼勒”）。本声明适用于[此次活动（包括调研）对象]的个人信息（定义见下文）。
+                        </p>
+                        <p>
+                            在适用的情况下，卡特彼勒将成为个人信息的有效的“数据控制人”。“数据控制人”是指决定任何个人信息之处理目的和处理方式的个人或组织（单独或共同或与其他实体联合）。
+                        </p>
+                        <h4>什么是个人信息？</h4>
+                        <p>个人信息是指与特定个体有关的或者能够识别特定个体的任何信息。换言之，个人信息可以是与你有关的任何一条信息。我们可能收集的个人信息包括但不限于：[此次活动（包括调研）可能收集的个人信息：手机号码]</p>
+
+                        <h4我们如何收集您的个人信息？</h4>
+                        <p>
+                            卡特彼勒在您参加此次活动（包括调研）时直接收集上述信息，此类信息基于自愿向卡特彼勒提供。
+                        </p>
+
+                        <h4>我们如何使用个人信息？</h4>
+                        <p>个人信息将作以下使用</p>                       
+                        <p>我们会使用您的个人信息来实现活动中产生的需求（例如，使用您的手机号码参与注册和登录，在您表示对某些产品或服务感兴趣时，我们可能用此号码来联系您。如果您在活动中的抽奖环节中奖，我们会使用您的手机号码作为确认中奖的联系方式。）</p>
+
+                        <h4>我们如何保护个人信息？</h4>
+                        <p>
+                            卡特彼勒采用合理的措施（包括信息技术安全措施和物理安全措施）来保护个人信息以防止丢失、篡改、伪造、未经授权的访问或未经授权的披露。对于因处理1个人信息而引起的风险、个人信息的敏感性以及考虑到适用法律的要求而言，这些措施均是适当的。卡特彼勒要求其所有员工遵守适用的关于个人信息的安全政策。</p>
+
+
+                        <h4>我们将个人信息保存多长时间？</h4>
+                        <p>只要是为了实现上述目的、满足法律记录保留要求所必需或适用法律允许，卡特彼勒将一直保存个人信息。在个人信息不再被需要时，且在任何情况下保留个人信息的法定权力到期之后，个人信息将通过保密和安全的方式被销毁。不准确或过期的个人信息一经识别将立即被销毁。</p>
+
+                        <h4>我们如何分享或转移我们所收集的个人信息？</h4>
+                        <p>
+                            只有在法律要求或获得您的同意时，卡特彼勒才会为商业目的转移个人信息。卡特彼勒可根据本声明在为了保护此等个人信息所设计的条款和条件下，向第三方数据控制人或处理者转移个人信息用于数据处理。卡特彼勒将仅在第三方被要求遵守此等程序或实质上相当的标准，以及根据适用的法律、法规和规章需要保护个人信息且其遵守来自卡特彼勒或其数据处理者的任何适当的安全措施以及指示的情况下才会向该第三方分享个人信息。卡特彼勒遵守所有关于向政府机构转移个人信息的法律要求，其标准或程序可能不同于本隐私声明。[为了任何此等目的，我们可能向其分享信息的第三方包括：</p>
+    
+                        <ul>
+                            <li>&bull;&nbsp;在全球范围内支持我们业务（例如提供技术基础设施服务）的供应商、服务提供商以及其他合作伙伴；</li>
+                            <li>&bull;&nbsp;法律实施机构或其他政府机构（当法律要求或数据主体授权时）；</li>
+                            <li>&bull;&nbsp;由卡特彼勒控制的关联公司以及其他实体；</li>
+                            <li>&bull;&nbsp;以及代表卡特彼勒处理个人信息的其他第三方服务提供商。]</li>
+                        </ul>
+
+                        <p>在大多数情况下，您向卡特彼勒提供个人信息即意味着您同意卡特彼勒可以为商业目转移所有数据。在某些司法管辖区，对于特定类别数据的转移可能需要获得数据主体明确的同意。</p>
+
+                        <h4>关于您的个人信息您有什么权利？</h4>
+                        <p>卡特彼勒采取合理的措施来保持个人数据的准确性和完整性。卡特彼勒具有允许您合理地访问您个人信息的程序并且授权他们行使根据其当地法律可以行使的其他任何权利。</p>
+                        <p> 请联系[China Branding and Communications]以获得访问您信息的正当程序。</p>
+
+
+                        <h4>我从哪里可以获取更多的信息？</h4>
+
+                        <p>如需请求访问、更新或删除您的个人信息（包括退订卡特彼勒将来的广告、营销或意见调查通讯），或者希望了解关于此隐私声明的更多信息，请通过以下方式联系我们：</p>
+                        <p>卡特彼勒（中国）投资有限公司</p>
+                        <p>联系人：[China Branding and Communications]</p>
+                        <p>中华人民共和国北京市朝阳区望京街8号院卡特彼勒大厦1203室</p>
+                        <p>您也可通过以下网址 http://codeofconduct.cat.com 或者拨打（800）-300-7898 联系卡特彼勒商业行为办公室。</p>
+                        <p>
+                            “处理”是指任何涉及使用个人信息或数据的活动，无论是否通过自动的方式，包括获取、记录或持有数据，或在信息上或关于信息进行任何操作，比如变更、调整、组织、修改、检索、使用、咨询、披露、清除或销毁信息。处理还包括将个人数据转移给第三方。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+    <div id="dialorMedia" class="flex-middle-center">
+        <video src=""></video>
+        <div class="close"></div>
+    </div>
+    
+    <div id="dialogBigImag">
+        <div class="close-btn"></div>
+        <div class="bg-box bg-box4">
+            <div class="swiper-container default-banner">
+                <ul class="swiper-wrapper">
+                    <li data-index="0" class="swiper-slide">
+                        <img src="./public/images/m1.png" alt="">
+                    </li>
+                    <li data-index="0" class="swiper-slide">
+                        <img src="./public/images/m1.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-left"></div>
+            <div class="swiper-right"></div>
+        </div>
+
+    </div>
+
+    <!-- 此外，请将此代码粘帖到紧跟起始 <body> 标记之后的位置： -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSMJ8RG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+
+</html>

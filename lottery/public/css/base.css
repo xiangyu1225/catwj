@@ -1,0 +1,524 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: arial, Microsoft YaHei, SimSun;
+    -webkit-text-size-adjust: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.L {
+    float: left;
+}
+
+.R {
+    float: right;
+}
+
+html,
+body {
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    font-family: MicroShoft YaHei, '黑体', SimSun, Arial;
+}
+
+body {
+    /* visibility: hidden; */
+    background: #000;
+    color: #333;
+}
+
+body.show {
+    visibility: visible;
+}
+
+.page_bg {
+    position: fixed;
+    z-index: -1;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+    top: -50%;
+    background: #ececec;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+input,
+select,
+textarea,
+label {
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+
+
+/*=== cent middle ===*/
+
+.middle {
+    bottom: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+
+.relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-middle-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+
+
+/*=== box model ===*/
+
+.border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/*=== text ===*/
+
+.text-overflow {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hr01 {
+    height: 0;
+    border: 0;
+    border-top: 1px #ececec solid;
+}
+
+.hr02 {
+    width: 6.98rem;
+    height: 1px;
+    border: 0;
+    background: #ececec;
+    border-right: .26rem #fff solid;
+    border-left: .26rem #fff solid;
+}
+
+.hr03 {
+    width: 6.98rem;
+    margin: 0 auto;
+    height: 1px;
+    border: 0;
+    background: #ececec;
+}
+
+.hr04 {}
+
+h3 {
+    line-height: 3rem;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+#waiting {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    z-index: 200;
+    background: black url("../images/1.gif") no-repeat center;
+    -webkit-background-size: 30px 30px;
+            background-size: 30px;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black url("../images/1.gif") no-repeat center;
+    -webkit-background-size: 30px 30px;
+            background-size: 30px;
+}
+
+.page1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.show .page1 {
+    background: black url("../images/1.png") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+.page1 .top {
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+}
+
+.show .page1 .top {
+    background: url("../images/page1/1.png") no-repeat 0 bottom;
+    -webkit-background-size: auto 100%;
+            background-size: auto 100%;
+}
+
+.page1 .top .guiz {
+    float: right;
+    display: block;
+    width: 6.6rem;
+    height: 100%;
+}
+
+.show .page1 .top .guiz {
+    background: url("../images/page1/2.png") no-repeat 0 bottom;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+}
+
+.page1 .card {
+    position: relative;
+    width: 100%;
+    height: 24.4rem;
+}
+
+.page1 .card .btn {
+    position: absolute;
+    display: block;
+    width: 70%;
+    height: 10%;
+    left: 18%;
+}
+.page1 .card .btn.on {
+     background: url("../images/page1/7.png") no-repeat 3% 0;
+    -webkit-background-size: auto 100% ;
+            background-size: auto 100% ;   
+}
+.page1 .card .btn:nth-child(0) {}
+
+.page1 .card .btn:nth-child(1) {
+    top: 16.4%;
+}
+.page1 .card .btn:nth-child(2) {
+    top: 27%;
+}
+.page1 .card .btn:nth-child(3) {
+    top: 38.4%;
+}
+.page1 .card .btn:nth-child(4) {
+    top: 48.8%;
+}
+.page1 .card .btn:nth-child(5) {
+    top: 59.8%;
+}
+.page1 .card .btn:nth-child(6) {
+    top: 71%;
+}
+.page1 .card .btn:nth-child(7) {
+    top: 81.8%;
+}
+.page1 .phone {
+    width: 61%;
+    height: 19%;
+    padding-left: 27%;
+    padding-top: 2%;
+}
+.page1 .phone input {
+    width: 100%;
+    height: 100%;
+    text-indent: 1rem;
+    font-size: 1.4rem;
+}
+.page1 .shengm {
+    width: 4rem;
+    height: 5rem;
+    padding-left: 17%;
+}
+.page1 .yuedu {
+    margin: 0 auto;
+    width: 8rem;
+    height: 4rem;
+}
+.page1 .shengm.on {
+         background: url("../images/page1/7.png") no-repeat 6.3rem 77%;
+    -webkit-background-size: auto 57% ;
+            background-size: auto 57% ;   
+}
+
+.page1 .main .bottom {
+    width: 100%;
+    height: 19rem;
+}
+.page1 .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 4rem;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.show .page1 .card {
+    background: url("../images/page1/5.png") no-repeat 0 bottom;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+}
+#p1Sub {
+    width: 100%;
+    height: 6rem;
+}
+
+.show .main .bottom {
+    background: url("../images/page1/6.png") no-repeat 0 bottom;
+    -webkit-background-size: 100% auto;
+            background-size: 100% auto;
+}
+
+.show .dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black url("../images/1.png") no-repeat center;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+.dialogsm{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black url("../images/1.png") repeat-x 0 0;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+.dialogsm .main {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+   width: 100%;
+   height: 100%;
+   padding-bottom: 8rem;
+}
+.dialogsm .main>div {
+    width: 100%;
+    height: 100%;
+}
+.dialogsm .main>div>div {
+    padding-bottom: 4rem;
+}
+.dialogsm .title {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.show .dialogsm .close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6.6rem;
+    height: 4rem;
+    background: url("../images/page1/3.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+}
+
+.show .dialog.on {
+    display: block;
+}
+
+.show .dialog .close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6.6rem;
+    height: 4rem;
+    background: url("../images/page1/3.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+}
+
+.show .dialog .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-top: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.imag4p1 {
+    width: 100%;
+    height: 24rem;
+}
+
+.show .imag4p1 div {
+    width: 100%;
+    height: 100%;
+    background: url("../images/page1/4.png") no-repeat 0 0;
+    -webkit-background-size: 100% 100%;
+            background-size: 100%;
+            border-top: 1px #f0f0f0 solid;
+}
+
+.dialog .text {
+    height: 15rem;
+    font-size: 1.2rem;
+    padding: 0 4rem;
+    line-height: 1.5rem; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -webkit-flex-direction: column; 
+       -moz-box-orient: vertical; 
+       -moz-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;  
+}
+.dialog .text .p2 {
+    padding-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2rem;
+}
+
+#catCode {
+    width: 18rem;
+    height: 3rem;
+        margin: 1rem auto 0;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: black;
+    text-align: center;
+    color: #ffcc00;
+}
+.page2 h3 {
+    height: 6rem;
+}
+.show #dialogGuiZe .content{
+    width: 100%;
+    height: 100%;
+    background: url("../images/page1/11.png") no-repeat center;
+    -webkit-background-size: 100%;
+            background-size: 100%;
+}
+.page2 .title{
+    padding-top: 4rem;
+    width: 100%;
+    height: 15rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.imag12,.imag13 {
+    display: none;
+}
+
+#timeText {
+    width: 18rem;
+    height: 4rem;
+        margin: 8.2rem auto 0;
+    line-height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background: #ffcc00;
+    text-align: center;
+    color: #000;
+}
+.show .dialog.page2 .main {
+    padding-top: 0;
+}
+
+
+

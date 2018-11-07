@@ -1,0 +1,928 @@
+
+#page-content {
+    margin: 0;
+    padding: 0;
+    clear: left;
+    position: relative;
+    width: 640px;
+    min-height: 800px;
+    font-family: "微软雅黑", "黑体", "宋体";
+    color: #000;
+    overflow: hidden;
+}
+
+.border {
+    /*border: 1px solid red;*/
+}
+
+.page1-1 {
+    position: relative;
+    margin: 0 auto;
+    width: 640px;
+    height: 266px;
+    background-image: url(../img/advantage/page1-1.png);
+    background-repeat: no-repeat;
+}
+
+.page1-1 .btn-detail {
+    position: absolute;
+    top: 205px;
+    left: 30px;
+    width: 200px;
+    height: 50px;
+    z-index: 99;
+}
+
+.page1-2 {
+    position: relative;
+    margin: 0 auto;
+    width: 640px;
+    height: 981px;
+    background-image: url(../img/advantage/page1-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.page1-3 {
+    position: relative;
+    margin: 0 auto;
+    width: 640px;
+    height: 944px;
+    background-image: url(../img/advantage/page1-3.png);
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.page1-2 .title1 {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 45px;
+    width: 640px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page1-2 .title2 {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 36px;
+    width: 640px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.page1-2 .content-detail {
+    position: absolute;
+    top: 378px;
+    width: 640px;
+    height: 420px;
+}
+
+.page1-2 .rule-box {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    width: 585px;
+    height: 320px;
+    font-size: 24px;
+}
+
+.page1-2 .btn-login {
+    position: absolute;
+    left: 145px;
+    bottom: 20px;
+    width: 352px;
+    height: 64px;
+    color: #ffce00;
+    line-height: 64px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #000000;
+}
+
+.page1-2 .btn-login .icon {
+   position: absolute;
+    width: 24px;
+    height: 64px;
+    margin-left: 20px;
+    background-image: url("../img/advantage/arrow-y.png");
+    background-repeat: no-repeat;
+}
+
+.page1-2 .img-box {
+    position: relative;
+    margin: -10px auto;
+    width: 640px;
+    height: 443px;
+    /*background-image: url(../img/advantage/img-circle.png);*/
+    /*background-repeat: no-repeat;*/
+}
+
+.page1-2 .rule-left {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    /*border: 3px solid #797979;*/
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.page1-2 .time {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.page1-2 .time-text {
+    margin-left: 130px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.page1-2 .type {
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.page1-2 .type-kind {
+    position: absolute;
+    margin-left: 130px;
+    height: 30px;
+    line-height: 30px;
+    top: 40px;
+}
+
+.page1-2 .detail {
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+.page1-2 .detail-text {
+    position: absolute;
+    margin-left: 130px;
+    line-height: 28px;
+    top: 80px;
+    font-size: 22px;
+}
+
+.page1-2 .oil {
+    position: absolute;
+    left: 0;
+    top: 308px;
+}
+
+.page1-2 .oil-text {
+    position: absolute;
+    margin-left: 130px;
+    line-height: 24px;
+    top: 278px;
+    font-size: 22px;
+}
+
+.page1-2 .ps {
+    position: absolute;
+    margin-left: 70px;
+    line-height: 24px;
+    top: 420px;
+    font-size: 22px;
+}
+
+.page1-2 .table-box {
+    position: absolute;
+    left: 130px;
+    top: 310px;
+    min-width: 324px;
+    min-height: 100px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.page1-2 .th-box {
+    position: absolute;
+    left: 131px;
+    top: 310px;
+    width: 322px;
+    height: 30px;
+    background-color: #000;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.page1-2 .table-inner {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    min-width: 320px;
+    font-size: 22px;
+    line-height: 30px;
+    /*border: 3px solid #ffffff;*/
+    /*border-radius:5px;*/
+    /*-webkit-border-radius:5px;*/
+    text-align: center;
+    margin: 3px;
+}
+
+.page1-2 .table-box th {
+    /*background-color: #000;*/
+    color: #ffffff;
+}
+
+.page1-2 .table-box td {
+    /*background-color: #3b3b3b;*/
+}
+
+.page1-3 .title {
+    position: relative;
+    margin: 0 auto;
+    width: 470px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page1-3 .content-detail {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    min-height: 520px;
+}
+
+.page1-3 .step1 {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    width: 310px;
+    height: 240px;
+}
+
+.page1-3 .text1 {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 22px;
+}
+
+.page1-3 .text2 {
+    position: absolute;
+    left: 10px;
+    top: 34px;
+    font-size: 38px;
+}
+
+.page1-3 .text3 {
+    position: absolute;
+    left: 10px;
+    top: 108px;
+    font-size: 22px;
+}
+
+.page1-3 .step1 .img {
+    position: absolute;
+    left: 306px;
+    top: 0;
+    width: 328px;
+    height: 231px;
+    background-image: url(../img/advantage/step1.png);
+    background-repeat: no-repeat;
+}
+
+.page1-3 .step2 {
+    position: absolute;
+    left: 300px;
+    top: 340px;
+    width: 310px;
+    height: 240px;
+}
+
+.page1-3 .step2 .img {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    width: 217px;
+    height: 230px;
+    background-image: url(../img/advantage/step2.png);
+    background-repeat: no-repeat;
+}
+
+.page1-3 .step3 {
+    position: absolute;
+    left: 30px;
+    top: 574px;
+    width: 310px;
+    height: 240px;
+}
+
+.page1-3 .step3 .img {
+    position: absolute;
+    left: 306px;
+    top: 0;
+    width: 300px;
+    height: 248px;
+    background-image: url(../img/advantage/step3.png);
+    background-repeat: no-repeat;
+}
+.page1-3 .btn-login {
+    position: absolute;
+    left: 145px;
+    bottom: 30px;
+    width: 352px;
+    height: 64px;
+    color: #000;
+    line-height: 64px;
+    font-size: 32px;
+    text-align: center;
+    background-color: #ffca43;
+    font-weight: bold;
+}
+
+.page1-3 .btn-login .icon {
+    position: absolute;
+    width: 24px;
+    height: 64px;
+    margin-left: 20px;
+    background-image: url(../img/advantage/arrow-b.png);
+    background-repeat: no-repeat;
+}
+.page1-4 {
+    position: relative;
+    margin: 0 auto;
+    width: 640px;
+    height: 1016px;
+    background-image: url(../img/advantage/page1-4.png);
+    background-repeat: no-repeat;
+    font-family: "微软雅黑", "黑体", "宋体";
+    color: #000;
+}
+
+.page1-4 .title {
+    position: relative;
+    font-size: 36px;
+    width: 640px;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page1-4 .lucky-img {
+    position: relative;
+    margin: 20px auto 20px;
+    width: 214px;
+    height: 214px;
+    background-image: url(../img/advantage/lucky-img.png);
+    background-repeat: no-repeat;
+}
+
+.page1-4 .lucky-text {
+    font-size: 24px;
+    text-align: center;
+    font-family: "微软雅黑", "黑体", "宋体";
+}
+
+.page1-4 .lucky-text2 {
+    font-size: 20px;
+    text-align: center;
+    font-family: "微软雅黑", "黑体", "宋体";
+}
+
+.page1-4 .Forms {
+    clear: left;
+    width: 640px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.page1-4 .Forms span {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+}
+
+.page1-4 .subTitle {
+    position: relative;
+    margin: 0 auto;
+    font-size: 36px;
+    width: 640px;
+    height: 36px;
+    line-height: 36px;
+    padding-top: 55px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page1-4 .Forms .input {
+    display: inline-block;
+    width: 402px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    background-color: #fcce2a;
+    border-radius: 8px;
+    margin: 15px;
+    border: 3px solid #868686;
+    color: #000;
+}
+
+.page1-4 .Forms .input1 {
+    margin-left: 10px;
+}
+
+.page1-4 .Forms .input2 {
+    margin-left: 10px;
+}
+
+.page1-4 .link {
+    position: relative;
+    width: 217px;
+    height: 73px;
+    margin: 30px auto 0;
+    background-image: url(../img/advantage/submit.png);
+    background-repeat: no-repeat;
+}
+
+.page1-4 .fujia-box {
+    position: relative;
+    width: 640px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.page1-4 .check-border {
+    position: absolute;
+    width: 51px;
+    height: 49px;
+    left: 70px;
+    top: 30px;
+    background-image: url(../img/advantage/check-border.png);
+    background-repeat: no-repeat;
+}
+
+.page1-4 .checkChange {
+    position: absolute;
+    width: 51px;
+    height: 49px;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    background-image: url(../img/advantage/check-border.png);
+    background-repeat: no-repeat;
+}
+
+.page1-4 .checkChange.checked {
+    background-image: url(../img/advantage/check.png);
+    background-repeat: no-repeat;
+}
+
+.page1-4 .fujia {
+    position: absolute;
+    width: 430px;
+    height: 60px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+    left: 150px;
+    top: 30px;
+    font-family: "微软雅黑", "黑体", "宋体";
+}
+
+.page1-4 .fujia2 {
+    position: absolute;
+    top: 130px;
+    left: 120px;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "微软雅黑", "黑体", "宋体";
+}
+
+.pageFormPop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    display: none;
+}
+
+.pageFormPop.on {
+    display: block;
+}
+
+.pageFormPop .BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.pageFormPop .PopInner {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /*background-image:url(../_images/popBG.jpg);*/
+    background-color: #333333;
+    width: 508px;
+    height: 180px;
+}
+
+.pageFormPop .PopInner .X {
+    background-image: url(../img/advantage/x.png);
+    /*background-position: center center;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.pageFormPop .PopInner .words {
+    position: absolute;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    color: #FFF;
+    width: 448px;
+    padding: 30px;
+    top: 40px;
+    left: 30px;
+    text-align: center;
+    cursor: default;
+}
+
+.dialog-box-bg {
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.private-box-bg {
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+
+}
+
+.private-box {
+    position: relative;
+    margin: 0 auto;
+    width: 620px;
+    height: 960px;
+    border: 2px solid #eeeeee;
+    background-color: #000;
+    color: #ffffff;
+    font-weight: normal;
+    overflow: hidden;
+    transform: scale(0.85);
+}
+
+.private-box .title {
+    position: relative;
+    width: 640px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#wrapper2 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 580px;
+    height: 780px;
+    overflow: hidden;
+}
+
+.private-text {
+    position: relative;
+    min-height: 100%;
+    width: 580px;
+    font-size: 26px;
+    color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.private-text p {
+    margin: 10px auto;
+    padding-bottom: 10px;
+    color: #dfdede;
+
+}
+
+.private-text h4 {
+    margin: 20px auto;
+    font-size: 28px;
+}
+
+.dialog-box-bg .dialog-box {
+    position: relative;
+    margin: 0 auto;
+    width: 620px;
+    height: 960px;
+    border: 2px solid #eeeeee;
+    background-color: #000;
+    color: #ffffff;
+    font-weight: normal;
+    transform: scale(0.85);
+}
+
+.dialog-box-bg #wrapper {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 580px;
+    height: 840px;
+    overflow: hidden;
+}
+
+.dialog-box-bg .page1-6 {
+    position: relative;
+    min-height: 700px;
+    width: 580px;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.dialog-box .tip-box {
+    position: relative;
+    margin: 0px auto;
+    width: 600px;
+    height: 160px;
+    font-weight: bold;
+}
+
+.dialog-box .tip-icon {
+    position: absolute;
+    left: 265px;
+    top: -7px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/advantage/tip-f.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dialog-box .tip-icon.success {
+    background-image: url(../img/advantage/tip-s.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+    background-image: url(../img/advantage/x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dialog-box .tip-text1 {
+    position: relative;
+    margin: 3px auto;
+    padding-top: 75px;
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.dialog-box .tip-text2 {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.dialog-box .line {
+    position: absolute;
+    top: 180px;
+    left: 70px;
+    width: 470px;
+    height: 1px;
+    background-color: #ffffff;
+
+}
+
+.dialog-box .text1 {
+    position: relative;
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 38px;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.dialog-box .about-box {
+    position: relative;
+    width: 100%;
+    height: 1400px;
+    margin: 0 auto;
+    font-size: 24px;
+    padding-top: 30px;
+}
+
+.dialog-box .arrow {
+    position: absolute;
+    width: 45px;
+    height: 44px;
+    left: 287px;
+    top: 906px;
+    background-image: url(../img/advantage/arrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.private-box-bg .arrow {
+    position: absolute;
+    width: 45px;
+    height: 44px;
+    left: 287px;
+    top: 855px;
+    background-image: url(../img/advantage/arrow.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dialog-box .about1 {
+    position: absolute;
+    width: 550px;
+    height: 600px;
+    left: 35px;
+    top: 90px;
+    background-image: url(../img/advantage/about-box.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dialog-box .text-content {
+    position: absolute;
+    width: 380px;
+    height: 200px;
+    left: 0;
+    top: 0px;
+}
+
+.dialog-box .about2 {
+    position: absolute;
+    width: 550px;
+    height: 620px;
+    left: 35px;
+    top: 740px;
+    background-image: url(../img/advantage/about-box.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dialog-box .about1 .text2, .about2 .text2 {
+    position: absolute;
+    width: 500px;
+    height: 30px;
+    left: 30px;
+    top: 230px;
+}
+
+.dialog-box .about1 .text3, .about2 .text3 {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: 30px;
+    top: 354px;
+
+}
+
+.dialog-box .about1 .text2 span, .about2 .text2 span {
+    margin-right: 10px;
+}
+
+.dialog-box .about1 .text3 p, .about2 .text3 p {
+    margin: 0px;
+}
+
+.dialog-box .about1 .img {
+    position: absolute;
+    width: 246px;
+    height: 185px;
+    left: 130px;
+    top: -3px;
+    background-image: url(../img/advantage/about1.png);
+    background-repeat: no-repeat;
+}
+
+.dialog-box .about2 .img {
+    position: absolute;
+    width: 246px;
+    height: 185px;
+    left: 130px;
+    top: -3px;
+    background-image: url(../img/advantage/about2.png);
+    background-repeat: no-repeat;
+}
+
+.dialog-box .about1 .type, .about2 .type {
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    left: 30px;
+    top: 190px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.dialog-box .btn-detail1 {
+    position: absolute;
+    width: 196px;
+    height: 65px;
+    line-height: 65px;
+    left: 165px;
+    top: 520px;
+    border: 2px solid #fff;
+    font-size: 28px;
+    text-align: center;
+    background-image: url(../img/advantage/btn-detail.png);
+    background-repeat: no-repeat;
+}
+
+.dialog-box .btn-detail2 {
+    position: absolute;
+    width: 196px;
+    height: 65px;
+    line-height: 65px;
+    left: 165px;
+    top: 535px;
+    font-size: 28px;
+    text-align: center;
+    border: 2px solid #fff;
+    background-image: url(../img/advantage/btn-detail.png);
+    background-repeat: no-repeat;
+}
+
+.dialog-box .btn-askPrice {
+    position: absolute;
+    width: 196px;
+    height: 65px;
+    left: 270px;
+    top: 520px;
+    background-image: url(../img/advantage/btn-ask.png);
+    background-repeat: no-repeat;
+}
+

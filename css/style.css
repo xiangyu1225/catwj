@@ -1,0 +1,2528 @@
+@charset "UTF-8";
+html {
+    width: 100%;
+    height: 100%;
+}
+
+html,
+body {
+    font-size: 24px;
+}
+
+
+/*.ios,*/
+
+
+/*.ios body{font-size: 16px;}*/
+
+body {
+    width: 640px;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+
+/*font-family:Open Sans,Merriweafther,Verdana,Arial,Tahoma,sans-serif;*/
+
+html {
+    font-family: arial, "黑体", "宋体", "微软雅黑";
+    background-color: #fff;
+    color: #000;
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+}
+
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+
+/* Links
+   ========================================================================== */
+
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+
+/* Text-level semantics
+   ========================================================================== */
+
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/* Embedded content
+   ========================================================================== */
+
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+    border: 0;
+}
+
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/* Grouping content
+   ========================================================================== */
+
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+    margin: 1em 40px;
+}
+
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+    overflow: auto;
+}
+
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+
+/* Forms
+   ========================================================================== */
+
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+    margin: 0;
+    /* 3 */
+}
+
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+    overflow: visible;
+}
+
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+
+
+/* 1 */
+
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+    cursor: pointer;
+    /* 3 */
+}
+
+
+
+/*input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}*/
+
+input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/*Firefox下：*/
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/**
+* Re-set default cursor for disabled elements.
+*/
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+
+/**
+* Remove inner padding and border in Firefox 4+.
+*/
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+/**
+* Address Firefox 4+ setting `line-height` on `input` using `!important` in
+* the UA stylesheet.
+*/
+
+input {
+    line-height: normal;
+}
+
+
+/**
+* It's recommended that you don't attempt to style these elements.
+* Firefox's implementation doesn't respect box-sizing, padding, or width.
+*
+* 1. Address box sizing set to `content-box` in IE 8/9/10.
+* 2. Remove excess padding in IE 8/9/10.
+*/
+
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+
+/**
+* Fix the cursor style for Chrome's increment/decrement buttons. For certain
+* `font-size` values of the `input`, it causes the cursor style of the
+* decrement button to change from `default` to `text`.
+*/
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+
+/**
+* 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+* 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+*/
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    /* 2 */
+}
+
+
+/**
+* Remove inner padding and search cancel button in Safari and Chrome on OS X.
+* Safari (but not Chrome) clips the cancel button when the search input has
+* padding (and `textfield` appearance).
+*/
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+
+/**
+* Define consistent border, margin, and padding.
+*/
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+
+/**
+* 1. Correct `color` not being inherited in IE 8/9/10/11.
+* 2. Remove padding so people aren't caught out if they zero out fieldsets.
+*/
+
+legend {
+    border: 0;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+
+/**
+* Remove default vertical scrollbar in IE 8/9/10/11.
+*/
+
+textarea {
+    overflow: auto;
+}
+
+
+/**
+* Don't inherit the `font-weight` (applied by a rule above).
+* NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+*/
+
+optgroup {
+    font-weight: bold;
+}
+
+
+/* Tables
+  ========================================================================== */
+
+
+/**
+* Remove most spacing between table cells.
+*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+
+
+/* ==========================================================================
+  Base styles: opinionated defaults
+  ========================================================================== */
+
+
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+    resize: vertical;
+}
+
+
+
+/* ==========================================================================
+  Browser Upgrade Prompt
+  ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+  Author's custom styles
+  ========================================================================== */
+
+
+/* ==========================================================================
+  Helper classes
+  ========================================================================== */
+
+
+/*
+* Hide visually and from screen readers:
+*/
+
+.pull-right {
+    float: rihgt;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+* Hide only visually, but have it available for screen readers:
+* http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+
+
+
+.hide2 {
+    visibility: hidden;
+}
+
+.ellipsis {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    word-wrap: normal
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.carousel {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 178px;
+    margin-top: 3px;
+}
+
+.carousel-inner>.item {
+    position: relative;
+    display: none;
+    -webkit-transition: .6s ease-in-out left;
+    -o-transition: .6s ease-in-out left;
+    transition: .6s ease-in-out left;
+    height: 100%;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    line-height: 1;
+}
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-inner>.item {
+        -webkit-transition: -webkit-transform .6s ease-in-out;
+        -o-transition: -o-transform .6s ease-in-out;
+        transition: -webkit-transform .6s ease-in-out;
+        -o-transition: transform .6s ease-in-out;
+        transition: transform .6s ease-in-out;
+        transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+    }
+    .carousel-inner>.item.next,
+    .carousel-inner>.item.active.right {
+        left: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    .carousel-inner>.item.prev,
+    .carousel-inner>.item.active.left {
+        left: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    .carousel-inner>.item.next.left,
+    .carousel-inner>.item.prev.right,
+    .carousel-inner>.item.active {
+        left: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    display: block;
+}
+
+.carousel-inner>.active {
+    left: 0;
+}
+
+.carousel-inner>.next,
+.carousel-inner>.prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-inner>.next {
+    left: 100%;
+}
+
+.carousel-inner>.prev {
+    left: -100%;
+}
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+    left: 0;
+}
+
+.carousel-inner>.active.left {
+    left: -100%;
+}
+
+.carousel-inner>.active.right {
+    left: 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    filter: alpha(opacity=50);
+    margin-top: -22px;
+    opacity: 1;
+    width: 29px;
+    height: 66px;
+}
+
+.carousel-control.left {
+    ;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+    color: #fff;
+    text-decoration: none;
+    filter: alpha(opacity=90);
+    outline: 0;
+    opacity: .9;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #ffcd10;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-caption .btn {
+    text-shadow: none;
+}
+
+
+
+/*css****************************************/
+
+* {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /*font-size: 14px;*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.hide {
+    display: none!important;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 532px;
+    height: 66;
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    padding: 10px;
+    line-height: 26px;
+}
+
+.select {
+    position: relative;
+}
+
+.select:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    background: url('../img/arrow2.png') 0 0 no-repeat;
+    width: 23px;
+    height: 16px;
+}
+
+.select select {
+    padding-right: 30px;
+}
+
+.ios input,
+.ios textarea,
+.ios select,
+.ios button {
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+
+em,
+i,
+b {
+    font-style: normal;
+}
+
+.ios em,
+.ios i,
+.ios b {
+    font-size: 14px;
+}
+
+img {
+    font-size: 0;
+}
+
+
+.c333 {
+    color: #333;
+}
+
+.c30 {
+    color: #303030;
+}
+
+.c666 {
+    color: #666;
+}
+
+.c999 {
+    color: #999;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 93px;
+    background: #f7f7f7;
+    z-index: 1000;
+}
+
+header .back,
+header .top-right {
+    height: 93px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .back-on {
+    background-color: #ffcd0f
+}
+
+header .top-right {
+    left: auto;
+    right: 0;
+}
+
+header .top-right img {
+    height: 100%;
+    width: auto;
+}
+
+.top-menu-1 {
+    display: none;
+}
+
+
+.main {
+    width: 100%;
+    min-height: 800px;
+    position: relative;
+    margin-top: 93px;
+    padding-bottom: 122px;
+}
+
+
+
+
+.menu-list {
+    position: absolute;
+    top: 93px;
+    width: 100%;
+    background: #ffcd10;
+    z-index: 1000
+}
+
+.menu-list li {
+    height: 96px;
+    border-bottom: 1px solid #b49625;
+    padding: 2px 0;
+}
+
+.menu-list li:last-child {
+    border: none;
+}
+
+.ios .menu-list li {
+    font-size: 17px;
+}
+
+.menu-list li a {
+    width: 100%;
+}
+
+.menu-list li a.user {
+    width: auto;
+    padding-right: 20px;
+    font-weight: bold
+}
+
+.menu-list img {
+    height: 100%;
+    width: auto;
+}
+
+.menu-list-back a {
+    line-height: 90px;
+    padding-left: 20px;
+}
+
+.menu-list .btn-360 {
+    width: 100%;
+    margin-top: -70px;
+    margin-left: 72px;
+    font-weight: bold;
+    position: absolute
+}
+
+.menu-list .btn-360 span {
+    margin-left: 0;
+    font-size: 22px;
+    margin-top: 0;
+    position: absolute;
+}
+
+.menu-list .btn-fuel {
+    width: 100%;
+    margin-top: -60px;
+    margin-left: 72px;
+    font-weight: bold;
+    position: absolute
+}
+
+.menu-list .btn-zhineng {
+    width: 100%;
+    margin-top: -60px;
+    margin-left: 72px;
+    font-weight: bold;
+    position: absolute
+}
+
+.menu-list .btn-dealer {
+    width: 100%;
+    margin-top: -56px;
+    margin-left: 72px;
+    font-weight: bold;
+    position: absolute
+}
+
+.menu-list .btn-home {
+    width: 100%;
+    margin-top: -56px;
+    margin-left: 72px;
+    font-weight: bold;
+    position: absolute
+}
+
+
+.login-panel {
+    position: relative;
+    padding: 20px;
+}
+
+.login-panel h1 {
+    text-align: center;
+    font-size: 30px
+}
+
+.ios .login-panel h1 {
+    font-size: 20px
+}
+
+.login-panel h3 {
+    font-size: 26px
+}
+
+.ios .login-panel h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.login-panel table {
+    background-color: #e5e5e5;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-panel table th,
+.login-panel table td {
+    padding: 12px;
+}
+
+.login-panel table th {
+    padding-bottom: 0;
+}
+
+.login-panel table td {
+    padding-top: 0;
+}
+
+.login-panel table td span {
+    display: inline-block;
+    border-left: 1px solid #666;
+    padding-left: 6px;
+}
+
+.ios .login-panel table td span {
+    font-size: 14px;
+}
+
+.login-panel table td.youshi strong {}
+
+.ios .login-panel table td.youshi strong {
+    font-size: 16px;
+}
+
+
+.login-panel table td img {
+    width: 124px;
+    height: 90px;
+}
+
+.login-panel .inputBox {
+    width: 80%;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+/*.ios .login-panel .inputBox{font-size: 16px}*/
+
+.ios .login-panel .inputBox span {
+    font-size: 0.8em;
+}
+
+.btn-doRegister {
+    padding-top: 30px
+}
+
+.login-panel .inputBox input {
+    width: 100%;
+    height: 58px;
+    padding: 6px 10px 6px 140px;
+    border: 1px solid #ddd;
+}
+
+.login-panel .inputBox span {
+    display: inline-block;
+    height: 54px;
+    background-color: #e5e5e5;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding-left: 10px;
+    line-height: 60px;
+}
+
+.login-panel .inputBox p.info {
+    color: #999;
+    padding-top: 6px;
+}
+
+.ios .login-panel p {
+    font-size: 0.8em;
+}
+
+.login-panel a,
+.login-panel a:hover {
+    color: #ffcd0f;
+}
+
+.registerPage .login-panel table td span {
+    padding: 0 8px 0 16px;
+}
+
+.registerPage .login-panel .inputBox input {
+    padding-left: 86px;
+}
+
+.title {
+    position: relative;
+}
+
+.tel {
+    width: 63px;
+    height: 71px;
+    position: absolute;
+    right: 28px;
+    top: 0;
+    z-index: 100
+}
+
+.currency {
+    width: 63px;
+    height: 73px;
+    position: absolute;
+    right: 110px;
+    top: 0;
+    z-index: 100
+}
+
+.picBox {
+    position: relative;
+    overflow: hidden;
+    height: 128px
+}
+
+.picBox .point {
+    position: absolute;
+    bottom: 0;
+    padding: 4px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.picBox .point i {
+    background-color: #fff;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+
+.picBox .point i.on {
+    background-color: #fce89d
+}
+
+.ask-panel {
+    position: relative;
+    padding-bottom: 280px
+}
+
+.ask-panel input {
+    width: 508px;
+    height: 60px;
+    border: none;
+    padding: 16px 20px;
+    position: absolute;
+    left: 90px;
+    top: 159px;
+}
+
+.ask-panel input.mobile {
+    top: 241px;
+}
+
+
+.list {
+    padding: 20px 0;
+}
+
+.list .item {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding: 16px 40px;
+    border-bottom: 1px solid #bbb;
+}
+
+
+/*.list .item:last-child{border-bottom: none;}*/
+
+.list .item .pic {
+    width: 124px;
+    height: 90px;
+    float: left
+}
+
+.list .item p {
+    padding: 16px 130px 16px 140px;
+    text-align: justify;
+}
+
+.list .item p strong {
+    font-size: 26px;
+}
+
+.ios .list .item p strong {
+    font-size: 14px;
+}
+
+.ios .list .item p span {
+    font-size: 14px;
+}
+
+.list .item .arrow {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    right: 40px;
+    top: 46px;
+}
+
+.list .item .detail {
+    width: 132px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 45px;
+}
+
+.searchPage .tab {
+    height: 68px;
+}
+
+.searchPage .list .item {
+    padding: 20px 40px;
+}
+
+.searchPage .list .item .arrow {
+    top: 48px;
+}
+
+.searchPage .noData {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.searchPage .productList .item p {
+    padding-top: 30px;
+}
+
+.searchPage .zhengyanList .item p {
+    padding: 16px 120px 16px 20px;
+}
+
+.searchPage .zhuanjiaList .item p {
+    padding-top: 30px;
+}
+
+.searchPage .zhuanjiaList .item .pic {
+    width: 100px;
+    height: 100px;
+}
+
+.productDetailPage {
+    /*background-color: #f7f7f7;*/
+}
+
+.productDetailPage .title {
+    background: #ffcd0f;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.ios .productDetailPage .title span {
+    font-size: 17px
+}
+
+.productDetailPage h3 {
+    padding: 16px 10px;
+    font-size: 30px
+}
+
+.ios .productDetailPage h3 {
+    font-size: 17px;
+}
+
+.productDetailPage .txt {
+    padding: 10px 40px;
+    background-color: #f7f7f7;
+    font-size: 24px;
+}
+
+.ios .productDetailPage .txt {
+    font-size: 16px;
+}
+
+.ios .productDetailPage .txt span {
+    font-size: 16px;
+}
+
+.productDetailPage .txt>div {
+    position: relative;
+    padding: 8px 0;
+    overflow: hidden;
+}
+
+.ios .productDetailPage .txt>div {
+    font-size: 16px;
+}
+
+.productDetailPage .txt>div span {
+    width: 154px;
+    display: inline-block;
+    float: left;
+}
+
+.productDetailPage .txt>div span i {
+    display: inline-block;
+    border-width: 6px;
+    border-color: transparent transparent transparent #333;
+    border-style: solid;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.productDetailPage .txt>div label {
+    text-align: center;
+    padding: 0 10px 10px;
+    float: left;
+    line-height: 46px;
+}
+
+.productDetailPage .txt>div label img {
+    width: 82px;
+}
+
+.productDetailPage .args {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 34px;
+    font-size: 24px;
+}
+
+.ios .productDetailPage .args {
+    font-size: 16px;
+}
+
+.productDetailPage .args table {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.productDetailPage .args table tr {}
+
+.productDetailPage .args table tr th,
+.productDetailPage .args table tr td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    /*height: 48px;*/
+    text-align: center;
+    padding: 12px 10px;
+    font-size: 20px;
+}
+
+.productDetailPage .args table tr th {
+    background-color: #f3f3f3;
+}
+
+.productDetailPage .args table tr th:first-child,
+.productDetailPage .args table tr td:first-child {
+    width: 300px;
+    text-align: left;
+}
+
+.ios .productDetailPage .args table tr th,
+.ios .productDetailPage .args table tr td {
+    font-size: 16px;
+}
+
+.productDetailPage .zhuanjiaBox {
+    background-color: #fff;
+    padding-top: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.productDetailPage .zhuanjiaBox img {
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+.productDetailPage .zhuanjiaBox p {
+    padding-left: 120px;
+    padding-top: 16px;
+}
+
+.productDetailPage .zhuanjiaBox p strong {
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.productDetailPage .zhuanjiaBox .item .detail {
+    top: 36px;
+}
+
+.productDetailPage .mySwipe2 {
+    position: relative;
+    overflow: hidden;
+    margin: 0 34px;
+}
+
+.productDetailPage .mySwipe2 .point {
+    position: absolute;
+    bottom: 0;
+    padding: 4px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.productDetailPage .mySwipe2 .point i {
+    background-color: #fff;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+
+.productDetailPage .mySwipe2 .point i.on {
+    background-color: #fce89d
+}
+
+.productDetailPage .mySwipe2 .prev,
+.productDetailPage .mySwipe2 .next {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -35px;
+    width: 54px;
+    height: 70px;
+    background-color: #ddd;
+}
+
+.productDetailPage .mySwipe2 .prev.on,
+.productDetailPage .mySwipe2 .next.on {
+    background-color: #ffce12;
+}
+
+.productDetailPage .mySwipe2 .prev img,
+.productDetailPage .mySwipe2 .next img {
+    width: 100%;
+}
+
+.productDetailPage .mySwipe2 .next {
+    left: auto;
+    right: 0;
+}
+
+.productDetailPage .picBox {
+    height: 562px;
+}
+
+.productDetailPage .picBox .prev,
+.productDetailPage .picBox .next {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -35px;
+    width: 54px;
+    height: 70px;
+    background-color: #ddd;
+}
+
+.productDetailPage .picBox .prev.on,
+.productDetailPage .picBox .next.on {
+    background-color: #ffce12;
+}
+
+.productDetailPage .picBox .prev img,
+.productDetailPage .picBox .next img {
+    width: 100%;
+}
+
+.productDetailPage .picBox .next {
+    left: auto;
+    right: 0;
+}
+
+
+.productDetailPage .recommendBox {
+    background-color: #fff;
+}
+
+.productDetailPage .recommendBox .item {
+    padding: 16px 24px;
+}
+
+.productDetailPage .recommendBox img {
+    width: 130px;
+    height: 110px;
+    float: left;
+}
+
+.productDetailPage .recommendBox p {
+    padding-left: 145px;
+    padding-top: 40px;
+}
+
+.productDetailPage .search-link {
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.productDetailPage .search-link a {
+    border-bottom: 1px solid #bbb;
+    margin: 10px 0;
+    color: #333;
+}
+
+.ios .productDetailPage .search-link a {
+    font-size: 17px;
+}
+
+.zhuanjiaPage .list img {
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+
+
+.searchBox {
+    padding: 12px;
+    position: relative;
+}
+
+.searchBox input {
+    width: 100%;
+    height: 66px;
+    border: 1px solid #c5c5c5;
+    padding: 20px 24px;
+}
+
+.searchBox .btn-search {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 22px;
+    top: 12px;
+}
+
+.searchBox .btn-search2 {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: 22px;
+    top: 12px;
+}
+
+.keyBox {
+    width: 100%;
+    padding: 0 36px;
+    overflow: hidden;
+}
+
+.keyBox li {
+    width: 50%;
+    float: left;
+    padding: 20px 0;
+}
+
+.ios .keyBox li {
+    font-size: 15px;
+}
+
+
+
+.tab {
+    position: relative;
+    overflow: hidden;
+}
+
+.tab img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.tab a {
+    height: 100%;
+    float: left;
+    width: 33%;
+}
+
+.productListPage .tab {
+    width: 604px;
+    margin: 0 auto;
+}
+
+.productListPage .tab .item {
+    display: inline-block;
+    width: 116px;
+    height: 58px;
+    color: #ffcd10;
+    background-color: #333;
+    margin-right: 6px;
+    line-height: 58px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.productListPage .tab .item:last-child {
+    margin-right: 0;
+}
+
+.productListPage .tab .item.on {
+    color: #333;
+    background-color: #ffcd10;
+}
+
+.productListPage .list {
+    padding-top: 0;
+}
+
+.productListPage .list .item {
+    padding: 16px 18px;
+}
+
+.productListPage .list .item p {
+    padding-top: 30px;
+    padding-right: 150px;
+}
+
+
+/*.ios .productListPage .list .item p{font-size:16px;}*/
+
+.productListPage .list .item .detail {
+    top: 36px;
+}
+
+
+
+.dealerPage .item .logo {
+    position: absolute;
+    width: 127px;
+    height: 40px;
+    top: 50px;
+    left: 15px;
+}
+
+.dealerPage .item p {
+    padding: 16px 0px 16px 0px;
+    width: 330px;
+    height: 100px
+}
+
+.dealerPage .list {
+    padding-top: 0;
+}
+
+.dealerPage .menu-list .item p {
+    padding: 0px
+}
+
+.dealer_Page .call-icon {
+    width: 261px;
+    height: 61px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px
+}
+
+.dealer_Page .header-text {
+    width: 640px;
+    padding-top: 10px;
+    line-height: 40px;
+    font-size: 30px;
+    background-color: rgb(255, 206, 16);
+    text-align: center;
+    font-weight: bold
+}
+
+.dealer_Page .location-text {
+    width: 600px;
+    padding-top: 10px;
+    line-height: 40px;
+    font-size: 30px
+}
+
+.dealer_Page .agent-name {
+    width: 600px;
+    padding-top: 10px;
+    line-height: 40px;
+    font-size: 30px
+}
+
+
+
+
+
+
+/*.connectPage{!*background-color: #f7f7f7;*!}*/
+
+.connectPage .title {
+    text-align: center;
+    background: #ffcd0f;
+    padding: 14px 0;
+}
+
+.ios .connectPage .title span {
+    font-size: 17px
+}
+
+.connectPage .tab {
+    height: 58px;
+    margin: 0 auto;
+}
+
+.connectPage .tab a {
+    width: 50%;
+}
+
+.connectPage .recommendBox {
+    background-color: #fff;
+}
+
+.connectPage .recommendBox .item {
+    padding: 16px 24px;
+}
+
+.connectPage .recommendBox img {
+    width: 130px;
+    height: 110px;
+    float: left;
+}
+
+.connectPage .recommendBox p {
+    padding-left: 145px;
+    padding-top: 40px;
+}
+
+
+
+.calculatePage {
+    /*background-color: #f7f7f7;*/
+}
+
+.calculatePage .title {
+    background: #ffcd0f;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.ios .calculatePage .title span {
+    font-size: 17px
+}
+
+.calculatePage .txt1 {
+    padding: 24px 56px;
+}
+
+.calculatePage .txt1 strong {
+    font-size: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.ios .calculatePage .txt1 strong {
+    font-size: 18px;
+}
+
+.calculatePage .txt1 span {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.ios .calculatePage .txt1 span {
+    font-size: 14px;
+}
+
+.calculatePage .option {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.calculatePage .option .title2 {
+    background-color: #e5e5e5;
+    padding: 20px 88px 20px 30px;
+    position: relative;
+}
+
+
+/*.ios .calculatePage .option .title2{font-size: 16px;}*/
+
+.calculatePage .option .title2 em {
+    display: inline-block;
+    background-color: #fac000;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 8px;
+    font-size: 0.8rem;
+}
+
+.ios .calculatePage .option .title2 span {
+    font-size: 0.8rem;
+}
+
+.calculatePage .option .title2 .arrow {
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    right: 60px;
+    top: 22px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.calculatePage .option.open .title2 .arrow {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+.calculatePage .option .title2 .input {
+    margin-top: -14px;
+    margin-right: -22px;
+}
+
+.ios .calculatePage .option .title2 .input {
+    margin-right: -36px;
+}
+
+.calculatePage .option .title2 .input input {
+    border: 1px solid #979797;
+    width: 85px;
+    height: 58px;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+.calculatePage .option .content {
+    padding: 24px 36px 24px 56px;
+    overflow: hidden;
+}
+
+.calculatePage .option .content .txt {
+    width: 366px;
+    float: left;
+    /*padding-top: 14px;*/
+    position: relative;
+    padding-right: 30px;
+}
+
+.ios .calculatePage .option .content .txt {
+    font-size: 0.8rem;
+}
+
+.calculatePage .option .content .input {}
+
+.calculatePage .option .content .input input {
+    border: 1px solid #979797;
+    width: 122px;
+    height: 58px;
+    margin-right: 8px;
+}
+
+.calculatePage .option .content .select {
+    position: relative;
+}
+
+.calculatePage .option .content .select:before {
+    content: '';
+    border-color: #666 transparent transparent transparent;
+    border-width: 10px;
+    border-style: solid solid none solid;
+    position: absolute;
+    right: 16px;
+    top: 22px;
+}
+
+.calculatePage .option .content .select:after {
+    display: none;
+}
+
+.calculatePage .option .content select {
+    border: 1px solid #979797;
+    height: 58px;
+    margin-bottom: 20px;
+    background: transparent;
+    width: 100%;
+}
+
+.calculatePage .option .content .txt>.circle1,
+.calculatePage .option .content .txt>.circle2 {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.calculatePage .option .content .txt>.circle1 {
+    display: none;
+}
+
+.calculatePage .option .content .txt>.circle2 {
+    display: inline-block;
+}
+
+.calculatePage .option .content .txt.checked>.circle1 {
+    display: inline-block;
+}
+
+.calculatePage .option .content .txt.checked>.circle2 {
+    display: none;
+}
+
+.calculatePage .recommendBox {
+    background-color: #fff;
+}
+
+.calculatePage .recommendBox .item {
+    padding: 16px 24px;
+}
+
+.calculatePage .recommendBox img {
+    width: 130px;
+    height: 110px;
+    float: left;
+}
+
+.calculatePage .recommendBox p {
+    padding-left: 145px;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+footer {
+    font-size: 0;
+    height: 163px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+footer .footer-menu {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 96px;
+    z-index: 100;
+}
+
+footer .footer-menu img {
+    position: absolute;
+    z-index: -1;
+}
+
+footer .footer-menu a {
+    float: left;
+    width: 25%;
+    height: 96px;
+}
+
+footer .notice-box {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    background-color: rgb(255, 203, 72)
+}
+
+footer .notice {
+    width: 800px;
+    height: 40px;
+    line-height: 40px;
+}
+
+footer .notice-bg {
+    width: 92%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 50px;
+    overflow: hidden
+}
+
+footer .notice-icon {
+    width: 34px;
+    height: 40px;
+    position: absolute;
+    left: 12px;
+    background-image: url(../img/notice-icon.png)
+}
+
+footer>img {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+
+.pop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000
+}
+
+.pop .content {
+    position: absolute;
+    top: 10%;
+    background-color: #fff;
+    width: 100%;
+}
+
+.pop .title {
+    background-color: #ffcd0f;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.pop .title .arrow {
+    display: inline-block;
+    background: url('../img/arrow2.png') 0 0 no-repeat;
+    width: 23px;
+    height: 16px;
+    margin-left: 4px;
+}
+
+
+.pop .content input {
+    border: 1px solid #979797;
+    width: 460px;
+    height: 58px;
+    position: absolute;
+    left: 58px;
+    top: 216px;
+}
+
+.pop .content .input1 {}
+
+.pop .content .input2 {
+    top: 344px;
+}
+
+.pop .content .input3 {
+    top: 476px;
+}
+
+.pop .content .input4 {
+    top: 604px;
+}
+
+.pop .content .btn-sub {
+    position: absolute;
+    top: 738px;
+    width: 100%;
+    height: 115px;
+}
+
+.pop .content .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.calculatePage .pop {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.calculatePage .pop .content {
+    background-color: transparent;
+    /*margin:30px 0;*/
+}
+
+.pop-search .selectBox {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.pop-search .selectBox .select {
+    float: left;
+    width: 188px;
+    margin-right: 16px;
+}
+
+.pop-search .selectBox .select:last-child {
+    margin-right: 0
+}
+
+.pop-search .selectBox .select select {
+    width: 100%;
+}
+
+.pop-search .inputBox {
+    padding: 0 20px 20px;
+}
+
+.pop-search .inputBox p {
+    padding: 10px 0
+}
+
+.pop-search .inputBox label {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.pop-search .bottom {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pop-search [type="button"] {
+    background: #000;
+    width: 330px;
+    height: 60px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 auto;
+    color: #ffcd0f;
+}
+
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+    height: 100%
+}
+
+.swipe-wrap>div {
+    float: left;
+    width: 640px;
+    position: relative;
+}
+
+.swipe-wrap>div a {
+    width: 100%;
+}
+
+#mySwipe {
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto
+}
+
+
+.loading {
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 95px;
+}
+
+.loading i {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -148px;
+    background-image: url('../img/loading.gif')
+}
+
+
+
+.playerBox {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 10000
+}
+
+.playerBox video {
+    width: 100%;
+    /*height: 500px;*/
+    margin-top: 15%;
+}
+
+
+/* 20180308 by jls */
+
+#cat360Btn {
+    display: none;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+#cat360Btn>img {
+    height: 90px;
+    width: auto;
+    float: left;
+}
+
+#dialogCat360 {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+}
+
+#dialogCat360.on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#dialogCat360>div {
+    position: relative;
+}
+
+.dialogCat360-close {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    top: 0;
+}
+
+.anxin360-h4 {
+    margin: 0 0 30px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.anxin360-txt1 {
+    width: 91%;
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 25px;
+    overflow: hidden;
+}
+.anxin360-txt2 {
+    position: absolute;
+    left: 50px;
+    bottom: 80px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 84%;
+    font-weight: bold;
+}
+
+.anxin360-txt2 a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.anxin360-txt2 a:hover {
+    color: #000;
+}
+
+.anxin360-main {
+    position: absolute;
+    top: 410px;
+    left: 50px;
+    width: 90%;
+}
+.anxin360-main span{
+  display: inline-block;
+  float: left;
+  max-width: 
+}
+.anxin360-main span:nth-child(1){
+  width: 3%;
+  font-size: 16px;
+}
+.anxin360-main span:nth-child(2){
+    width: 97%;
+}

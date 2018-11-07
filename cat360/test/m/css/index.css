@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "microsoft yahei";
+}
+
+body,
+html {
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* img {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+} */
+
+input,
+select,
+textarea,
+label {
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
+
+/* 去掉视频的下载按钮 */
+
+video::-internal-media-controls-download-button {
+    display: none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(106%);
+}
+
+.relative {
+    position: relative;
+}
+
+.ds {
+    display: block;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+}
+
+.center {
+    width: 100%;
+    position: relative;
+}
+
+.sp {
+    position: absolute;
+    width: 60%;
+    top: 1%;
+    left: 7%;
+}
+
+.videobg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bofang {
+    /*     position: absolute;
+    width: 20%;
+    right: 40%;
+    top: 33%; */
+}
+
+.video_box {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.myVideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center1 {
+    width: 100%;
+    position: relative;
+}
+
+.center2 {
+    width: 100%;
+    position: relative;
+}
+
+.center3 {
+    width: 100%;
+    position: relative;
+}
+
+.center4 {
+    width: 100%;
+    position: relative;
+}
+
+.center5 {
+    width: 100%;
+    position: relative;
+}
+
+.center6 {
+    width: 100%;
+    position: relative;
+    background: #fac400;
+}
+
+.center7 {
+    width: 100%;
+    position: relative;
+}
+
+.button1 {
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    width: 30%;
+}
+
+.button2 {
+    position: absolute;
+    bottom: 0%;
+    left: 6.5%;
+    width: 30%;
+}
+
+.button3 {
+    position: absolute;
+    top: 3%;
+    left: 12%;
+    width: 54%;
+}
+
+.button1,
+.button2,
+.button3 {
+    -webkit-animation: buton .4s linear infinite alternate;
+    animation: buton .4s linear infinite alternate;
+}
+
+
+.button1:after,
+.button2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/button2.png") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+
+
+@-webkit-keyframes buton {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+@keyframes buton {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+    }
+    100% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+
+
+form {
+    position: relative;
+    width: 100%;
+}
+
+.form_name {
+    width: 100%;
+}
+
+.name {
+    width: 39%;
+    height: 6.5%;
+    position: absolute;
+    display: block;
+    bottom: 48.5%;
+    left: 33.5%;
+    text-indent: 16px;
+    font-size: 24px;
+}
+
+.tel {
+    width: 39%;
+    height: 6.5%;
+    position: absolute;
+    display: block;
+    bottom: 38.3%;
+    left: 33.5%;
+    text-indent: 16px;
+    font-size: 24px;
+}
+
+.form_tj {
+    width: 21.2%;
+    height: 7%;
+    position: absolute;
+    display: block;
+    bottom: 27.5%;
+    right: 36.5%;
+}
+
+.duihao {
+    padding: 4%4% 0 0;
+    width: 2.5%;
+    position: absolute;
+    display: block;
+    bottom: 21%;
+    left: 11.3%;
+}
+
+.duihao img {
+    opacity: 0;
+}
+
+.duihao.on img {
+    opacity: 1;
+}
+
+.shengming {
+    width: 18%;
+    height: 4%;
+    position: absolute;
+    display: block;
+    bottom: 15%;
+    left: 39.5%;
+}
+
+.qiqiu {
+    position: fixed;
+
+    width: 25%;
+    right: 2%;
+    bottom: 10%;
+}
+
+
+#dialorMedia {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: black;
+}
+
+#dialorMedia.on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+#dialorMedia video {
+    width: 100%;
+}
+
+#dialorMedia .close {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/10.png") no-repeat center;
+    background-size: 3rem auto;
+}
+
+#dialogShengMing.on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+#dialogShengMing {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    background: #000000;
+    color: #ccc;
+}
+
+#dialogShengMing .private-box-bg {
+    border: 1px #fff solid;
+    width: 32rem;
+    height: 50.4rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: #000;
+}
+
+#dialogShengMing .private-box-bg .title {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#dialogShengMing .private-box-bg #wrapper2 {
+    width: 100%;
+    height: 43rem;
+    overflow: hidden;
+}
+
+#dialogShengMing .private-box-bg h4 {
+    margin: 1rem auto;
+    font-size: 1.4rem;
+}
+
+#dialogShengMing .private-box-bg p {
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    color: #dfdede;
+}
+
+#dialogShengMing .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../images/11.png") no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+#dialogAlert.on {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+#dialogAlert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+#dialogAlert>div {
+    width: 100%;
+}
+
+#dialogAlert .btn {
+
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 15% 20px;
+    background: #333;
+}
+#dialogAlert .btn img {
+
+}
+
+#dialogAlert p {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    min-height: 8rem;
+    line-height: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    background: #333;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+#dialogAlert p a {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
