@@ -628,22 +628,23 @@
                         ;
                         window.mySwipe = Swipe(elem, {
                             startSlide: 0,
-                            continuous: false,
+                            continuous: true,
                             callback: function (curIndex, element) {
                                 index = curIndex;
 
                                 topPic.find('.point i').eq(index).addClass('on').siblings().removeClass('on');
-                                if (index == 0) {
-                                    topPic.find('.prev').removeClass('on')
-                                    topPic.find('.next').addClass('on')
-                                } else if (index == count - 1) {
-                                    topPic.find('.prev').addClass('on')
-                                    topPic.find('.next').removeClass('on')
-                                } else {
-                                    topPic.find('.prev').addClass('on')
-                                    topPic.find('.next').addClass('on')
-                                }
-
+                                // if (index == 0) {
+                                //     topPic.find('.prev').removeClass('on')
+                                //     topPic.find('.next').addClass('on')
+                                // } else if (index == count - 1) {
+                                //     topPic.find('.prev').addClass('on')
+                                //     topPic.find('.next').removeClass('on')
+                                // } else {
+                                //     topPic.find('.prev').addClass('on')
+                                //     topPic.find('.next').addClass('on')
+                                // }
+                                topPic.find('.prev').addClass('on')
+                                topPic.find('.next').addClass('on')
                             }
                         });
 
@@ -686,23 +687,44 @@
 
                         var ele_engine = $('[name="engine"]')
                         for (var i = 0; i < data.engine.length; i++) {
-                            ele_engine.find('tr').eq(i + 1).find('td').eq(1).text(data.engine[i]);
+                            if (data.engine[i]) {
+                                ele_engine.find('tr').eq(i + 1).find('td').eq(1).text(data.engine[i]);
+                            } else {
+                                ele_engine.find('tr').eq(i + 1).hide();
+                            }
                         }
                         var ele_hydraulicSystem = $('[name="hydraulicSystem"]')
                         for (var i = 0; i < data.hydraulicSystem.length; i++) {
-                            ele_hydraulicSystem.find('tr').eq(i + 1).find('td').eq(1).text(data.hydraulicSystem[i]);
+                            if (data.hydraulicSystem[i]) {
+                                ele_hydraulicSystem.find('tr').eq(i + 1).find('td').eq(1).text(data.hydraulicSystem[i]);
+                            } else {
+                                ele_hydraulicSystem.find('tr').eq(i + 1).hide();
+                            }
                         }
                         var ele_drive = $('[name="drive"]')
                         for (var i = 0; i < data.drive.length; i++) {
-                            ele_drive.find('tr').eq(i + 1).find('td').eq(1).text(data.drive[i]);
+                            if (data.drive[i]) {
+                                ele_drive.find('tr').eq(i + 1).find('td').eq(1).text(data.drive[i]);
+                            } else {
+                                ele_drive.find('tr').eq(i + 1).hide();
+                            }
                         }
                         var ele_qualityList = $('[name="qualityList"]')
                         for (var i = 0; i < data.qualityList.length; i++) {
-                            ele_qualityList.find('tr').eq(i + 1).find('td').eq(1).text(data.qualityList[i]);
+                            console.log(data.qualityList[i]);
+                            if (data.qualityList[i]) {
+                                ele_qualityList.find('tr').eq(i + 1).find('td').eq(1).text(data.qualityList[i]);
+                            } else {
+                                ele_qualityList.find('tr').eq(i + 1).hide();
+                            }
                         }
                         var ele_maintain = $('[name="maintain"]')
                         for (var i = 0; i < data.maintain.length; i++) {
-                            ele_maintain.find('tr').eq(i + 1).find('td').eq(1).text(data.maintain[i]);
+                            if (data.maintain[i]) {
+                                ele_maintain.find('tr').eq(i + 1).find('td').eq(1).text(data.maintain[i]);
+                            } else {
+                                ele_maintain.find('tr').eq(i + 1).hide();
+                            }
                         }
 
                         // $('.link-ask').attr('href','xunjia.html?pid='+params.id)
@@ -803,22 +825,22 @@
                                 var elem = document.getElementById('mySwipe2');
                                 window.mySwipe_obj = Swipe(elem, {
                                     startSlide: 0,
-                                    continuous: false,
+                                    continuous: true,
                                     callback: function (curIndex, element) {
                                         index2 = curIndex;
 
                                         mySwipe2.find('.point i').eq(index2).addClass('on').siblings().removeClass('on');
 
-                                        if (index2 == 0) {
-                                            mySwipe2.find('.prev').removeClass('on')
-                                            mySwipe2.find('.next').addClass('on')
-                                        } else if (index2 == count2 - 1) {
+                                        // if (index2 == 0) {
+                                        //     mySwipe2.find('.prev').removeClass('on')
+                                        //     mySwipe2.find('.next').addClass('on')
+                                        // } else if (index2 == count2 - 1) {
+                                        //     mySwipe2.find('.prev').addClass('on')
+                                        //     mySwipe2.find('.next').removeClass('on')
+                                        // } else {
                                             mySwipe2.find('.prev').addClass('on')
-                                            mySwipe2.find('.next').removeClass('on')
-                                        } else {
-                                            mySwipe2.find('.prev').addClass('on')
                                             mySwipe2.find('.next').addClass('on')
-                                        }
+                                        // }
 
                                     }
                                 });
