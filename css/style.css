@@ -2438,6 +2438,21 @@ footer>img {
     float: left;
 }
 
+.btn-container>img {
+    height: 78px;
+    width: auto;
+    float: left;
+}
+
+.vr-btn-container {
+    padding: 20px;
+}
+
+.btn-container {
+    background: #f7f7f7;
+    padding-bottom: 20px;
+}
+
 #dialogCat360 {
     display: none;
     position: fixed;
@@ -2526,3 +2541,11 @@ footer>img {
 .anxin360-main span:nth-child(2){
     width: 97%;
 }
+.ask-fixed {
+    position: fixed;
+    right: 40px;
+    bottom: 160px;
+    width: 100px;
+    z-index: 10000;
+}
+

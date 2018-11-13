@@ -127,7 +127,8 @@
 
     //var SITE_CAT_IMG = 'http://img.mobileone.com.cn/';
     var SITE_CAT_IMG = 'http://m.catwj.cn//resource/';
-    var SITE_API_URL = "http://h5.sktap.cn/app/cat/site/api/";
+    // var SITE_API_URL = "http://h5.sktap.cn/app/cat/site/api/";
+    var SITE_API_URL = "http://gcim.goldfish88.net/api/";
 
     //var SITE_CATBANG = 'http://catbang.mobileone.com.cn';
     //var SITE_CATBANG = 'http://m.catwj.cn//testIndex/40/catbang';
@@ -564,7 +565,7 @@
                                 ' <p>' +
                                 '   <strong>{title}</strong>' +
                                 ' </p>' +
-                                ' <img src="img/btn-detail.png" alt="" class="detail">' +
+                                ' <img src="img/detail/xunjiahei.png" alt="" class="detail">' +
                                 '</a>', arr1 = [];
                             for (var i = 0; i < data.recommend.length; i++) {
                                 var o = data.recommend[i],
@@ -776,7 +777,7 @@
                                 ' <p>' +
                                 '   <strong>{title}</strong>' +
                                 ' </p>' +
-                                ' <img src="img/btn-detail.png" alt="" class="detail">' +
+                                ' <img src="img/detail/xunjiahei.png" alt="" class="detail">' +
                                 '</a>', arr1 = [];
                             for (var i = 0; i < data.recommend.length; i++) {
                                 var o = data.recommend[i],
@@ -887,7 +888,7 @@
                             ' <p>' +
                             '   <strong>{title}</strong>' +
                             ' </p>' +
-                            ' <img src="img/btn-detail.png" alt="" class="detail">' +
+                            ' <img src="img/detail/xunjiahei.png" alt="" class="detail">' +
                             '</a>', arr1 = [];
                         for (var i = 0; i < data.list.length; i++) {
                             var o = data.list[i],
