@@ -79,7 +79,7 @@
 </header>
 <div class="main">
     <div class="top-banner">
-        <img src="img/top-pic5.png" alt="">
+        <img src="img/tonghang-title.png" alt="">
     </div>
     <div class="search">
         <input type="text" placeholder="请输入您想了解的信息" class="kw">
