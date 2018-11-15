@@ -128,7 +128,8 @@
     //var SITE_CAT_IMG = 'http://img.mobileone.com.cn/';
     var SITE_CAT_IMG = 'http://m.catwj.cn//resource/';
     // var SITE_API_URL = "http://h5.sktap.cn/app/cat/site/api/";
-    var SITE_API_URL = "http://gcim.goldfish88.net/api/";
+    // var SITE_API_URL = "http://gcim.goldfish88.net/api/";
+    var SITE_API_URL = "http://test.m.catwj.cn/api/";
 
     //var SITE_CATBANG = 'http://catbang.mobileone.com.cn';
     //var SITE_CATBANG = 'http://m.catwj.cn//testIndex/40/catbang';
@@ -565,7 +566,7 @@
                                 ' <p>' +
                                 '   <strong>{title}</strong>' +
                                 ' </p>' +
-                                ' <img src="img/detail/xunjiahei.png" alt="" class="detail">' +
+                                ' <img src="img/btn-detail.png" alt="" class="detail">' +
                                 '</a>', arr1 = [];
                             for (var i = 0; i < data.recommend.length; i++) {
                                 var o = data.recommend[i],
@@ -728,6 +729,10 @@
                             }
                         }
 
+                        if (data.vr) {
+                            $('.vr-btn-container').removeClass('hide');
+                            $('.vr-url').attr('href', data.vr);
+                        }
                         // $('.link-ask').attr('href','xunjia.html?pid='+params.id)
                         console.log('新增接口');
 
@@ -772,23 +777,37 @@
 
 
                         if (data.recommend && data.recommend.length) {
-                            var htmlStr1 = '<a href="product-detail.html?id={id}" class="item">' +
+                            var htmlStr1 = '<a class="item link-to-ask" target-id="{tid}">' +
                                 ' <img src="{picUrl}" alt="">' +
                                 ' <p>' +
                                 '   <strong>{title}</strong>' +
                                 ' </p>' +
-                                ' <img src="img/detail/xunjiahei.png" alt="" class="detail">' +
+                                ' <img src="img/detail/xunjiahei.png"  class="detail ">' +
                                 '</a>', arr1 = [];
                             for (var i = 0; i < data.recommend.length; i++) {
                                 var o = data.recommend[i],
                                     t = htmlStr1.replace('{link}', o.link)
                                         .replace('{id}', o.id)
+                                        .replace('{tid}', o.id)
                                         .replace('{picUrl}', SITE_CAT_IMG + o.picUrl)
                                         .replace('{title}', o.title)
                                 arr1.push(t)
                             }
                             $('.recommendBox').html(arr1.join('')).removeClass('hide').prev().removeClass('hide');
-
+                            
+                            $('.link-to-ask').on('click', function (event) {
+                                var attrs = event.currentTarget.attributes;
+                                
+                                var str = '(' + $('.title').attr('data-typetitle') + ')';
+                                dataLayer && dataLayer.push({
+                                    'event': 'event',
+                                    'category': '产品详情页',
+                                    'action': '点击按钮',
+                                    'label': '产品详情页_点击按钮_我要询价' + str
+                                });
+                                var tid = attrs['target-id'].value;
+                                window.location.href = 'xunjia.html?pid=' + tid;
+                            });
                         }
                         ;
 
@@ -888,7 +907,7 @@
                             ' <p>' +
                             '   <strong>{title}</strong>' +
                             ' </p>' +
-                            ' <img src="img/detail/xunjiahei.png" alt="" class="detail">' +
+                            ' <img src="img/btn-detail.png" alt="" class="detail">' +
                             '</a>', arr1 = [];
                         for (var i = 0; i < data.list.length; i++) {
                             var o = data.list[i],
@@ -2131,7 +2150,7 @@
                 ExcavatorSize = 110;
 
             }
-
+            
             $('.link-ask').on('click', function () {
                 var str = '('+$('.title').attr('data-typetitle')+')';
                 console.log(str);
