@@ -735,6 +735,43 @@
                         }
                         // $('.link-ask').attr('href','xunjia.html?pid='+params.id)
                         console.log('新增接口');
+                        // data.ceping = '/catbang/img/video3.mp4';
+                        // data.cepingurl = 'http://www.baidu.com';
+                        if (data.ceping) {
+                            $('.cepingbox').removeClass('hide');
+                            $('#player').attr('src', data.ceping);
+                            if (data.cepingurl) {
+                                $('.cepingurl').attr('href', data.cepingurl);
+                            } else {
+                                $('.cepingurl').hide();
+                                $('.cepingbox').css('padding-bottom','10px');
+                            }
+
+                            var player = document.getElementById('player');
+                            $('.cepingvideo').on('click', function () {
+                                $('.playerBox').show();
+                                $('body1').css({ 'overflow': 'hidden' })
+                                player.play();
+                            });
+                            $('.playerBox').on('click', function (e) {
+                                var target = e.target,
+                                    $target = $(target);
+
+                                if ($target.closest('video').length) {
+                                    if (player.paused) {
+                                        player.play();
+                                    } else {
+                                        player.pause();
+                                    }
+                                } else {
+                                    player.pause();
+                                    $('.playerBox').hide();
+                                    $('body').css({ 'overflow': '' })
+                                }
+                            });
+                        }
+
+                        
 
                         if (data.expertList && data.expertList.length) {
                             var htmlStr2 = '<a href="{link}" class="item">' +

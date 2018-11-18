@@ -2548,4 +2548,36 @@ footer>img {
     width: 100px;
     z-index: 10000;
 }
-
+.cepingpic{
+    margin: 10px 40px;
+}
+.cepingpic>img{
+    width: 100%;
+}
+.cepingbox {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 70px;
+}
+.cepingbtn {
+    position: absolute;
+    width: 132px;
+    height: 50px;
+    right: 20px;
+}
+.productDetailPage .newzhuanjiaBox img {
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+.productDetailPage .newzhuanjiaBox img.zhuajiadetail {
+    position: absolute;
+    width: 132px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+}
+.productDetailPage .newzhuanjiaBox .item p {
+    padding: 0px 0px 60px 120px;
+    text-align: justify;
+}
