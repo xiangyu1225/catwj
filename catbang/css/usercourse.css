@@ -1,0 +1,52 @@
+.usercourse-list .usercourse-item:nth-child(1) {
+    background-color: #303435;
+    color: #ffffff;
+}
+.usercourse-list .usercourse-item {
+    background-color: #E4E5E6;
+    color: #000000;
+    position: relative;
+    height: 140px;
+    margin: 5px 0;
+}
+.usercourse-list .usercourse-item img.detail-btn {
+    position: absolute;
+    width: 130px;
+    height: 32px;
+    right: 20px;
+    bottom: 55px;
+}
+.usercourse-list .usercourse-item img.benqi {
+    position: absolute;
+    width: 40px;
+    height: 36px;
+    top: 0;
+    left: 20px;
+}
+.usercourse-list .usercourse-item img.kehugushi {
+    position: absolute;
+    width: 65px;
+    height: 56px;
+    left: 7px;
+    top: 40px;
+}
+.usercourse-list .usercourse-item .usercourse-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 200px 0 90px;
+}
+.usercourse-list .usercourse-item .usercourse-content p:nth-child(1){
+    font-size: 18px;
+}
+.usercourse-list .usercourse-item .usercourse-content p:nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+/* .usercourse-list .usercourse-item .usercourse-content p:nth-child(3){
+    font-size: 20px;
+    font-weight: bold;
+} */
+.usercourse-list .usercourse-item .usercourse-content p:nth-child(3){
+    font-size: 16px;
+}
