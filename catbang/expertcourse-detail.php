@@ -90,7 +90,7 @@
 
 <body class="ktb-detailPage">
     <header>
-        <img src="img/back.png" alt="" class="back" data-noback="1">
+        <img src="img/back.png" alt="" class="goback" data-noback="1">
         <img src="img/logo.png" alt="">
 
         <div class="top-right">
@@ -154,7 +154,11 @@
     <script src="js/jquery.js"></script>
     <script src="js/index.js?22"></script>
     <script>!!core && core.factory('ktbDetailPage')</script>
-
+    <script>
+        $('.goback').click(function () {
+            window.history.back();
+        });
+    </script>
     <!-- Google Tag Manager -->
     <noscript>
         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-N6KR6R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
