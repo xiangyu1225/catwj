@@ -22,7 +22,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>卡特帮-卡特挖掘机知识交流平台，帮您解答各种设备问题</title>
-    <link rel="stylesheet" href="css/style.css?121">
+    <link rel="stylesheet" href="css/style.css?2333">
     <style>
         .ios .ktb-detailPage .box .top-pic p {
             font-size: 16px;
