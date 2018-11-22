@@ -1,3 +1,12 @@
+<?php
+/*
+ * VERSION: 0.0.0.0
+ * DATE: 16/4/1
+ * Requires 
+ * @author: 清扬陌客, qingyangmoke@qq.com
+ */
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -100,27 +109,13 @@
         </div>
         <div class="box">
 
-            
-            <!-- 智能科技，让您的工作更顺利！ -->
-            <div id="course-header">智能科技，让您的工作更顺利！</div>
-            <div class="center">
-                <div class="cepingvideo cepingpic" id="playerbox">
-                    <img src="/img/cepingshipin.png">
-                </div>
-                <p>
-                    CAT®336挖掘机为这一级别的同类产品建立了更高的工作效率与燃油经济性标准。由于原厂标配了业内领先的智能科技功能以及进一步提升操作舒适度与生产效率的全新驾驶室，再加上更低的油耗与维护保养成本，CAT®336
-                    挖掘机将让您的运营生产效率与利润更上新台阶。
-                </p>
-                <img src="/catbang/img/expertcourse/336-1.png" alt="">
-                <p>
-                    Cat Connect 智能科技让您拥有领先优势地位。任何经验水平的操作手均能以更强的信心、更快的速度、更高的精准度完成挖掘、装载和修坡/平整动作。既提高了生产效率，又降低了运营成本。
-                </p>
-                <img src="/catbang/img/expertcourse/336-2.png" alt="">
-                <p>
-                    标配的2D电子围墙功能能够根据您在监视器中为整个工作区域（上下左右前后全方位）设定的边界自动停止挖掘机的越界动作。电子围墙功能能够保护设备不受到损坏并减少因土地分区规划或地下公用设施损坏而导致的罚金。自动边界功能甚至能够通过减少过多回转和过多挖掘动作而有助于防止操作手的疲劳。
-                </p>
-            </div>
-
+            <?php
+                $id = "0";
+                if (isset($_REQUEST["id"])) {
+                    $id = $_REQUEST["id"];
+                }
+                echo file_get_contents("expert-details/$id.html");
+            ?>
 
             <!--  -->
         

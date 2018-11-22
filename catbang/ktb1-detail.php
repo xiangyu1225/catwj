@@ -48,6 +48,7 @@
         #course-header {
             font-size: 22px;
             text-align: center;
+            line-height: 40px;
             font-weight: bold;
         }
         .playerBox {
